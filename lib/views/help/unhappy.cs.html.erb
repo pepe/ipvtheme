@@ -11,10 +11,10 @@
 <p>Pokud ...</p>
 
 <ul>
-<li>jste nedostali odpověď během 15 dnů (zákonná lhůta),</li>
-<li>jste nedostali veškeré požadované informace,<strong>or</strong></li>
-<li>nesouhlasíte s výší poplatku, který instituce požaduje pro zodpovězení dotazu<strong>or</strong></li>
-<li>či zodpovězení dotazu bylo zadmítnuto bez uvedení zákonného důvodu,</li>
+<li>jste nedostali odpověď během 15 dnů (zákonná lhůta), <strong>nebo</strong></li>
+<li>jste nedostali veškeré požadované informace,<strong>nebo</strong></li>
+<li>nesouhlasíte s výší poplatku, který instituce požaduje pro zodpovězení dotazu<strong>nebo</strong></li>
+<li>či zodpovězení dotazu bylo zadmítnuto bez uvedení zákonného důvodu</li>
 </ul>
 
 <p>pak můžete</p>
@@ -25,11 +25,11 @@
 <li>Před podáním stížnosti, odvolání či žaloby <strong>prověřte všechny nekonfliktní dostupné metody,</strong> jak získat odpověď na svůj dotaz. Jaké všechny fáze může mít zodpovězení dotazu, můžete zjistit z grafu na stránkách Otevřete.cz.</li>
 </ol>
 
-<h1 id="internal_review"> Doplnění dotazu <a class="hover_a" href="#internal_review">#</a> </h1>
+<h1 id="internal_review">1. Doplnění dotazu <a class="hover_a" href="#internal_review">#</a> </h1>
 
 <p>
-<% if !@info_request.nil? %>
-    <%= link_to "Request an internal review", show_response_no_followup_url(:id => @info_request.id, :incoming_message_id => nil) + "?internal_review=1#followup", :class => 'link_button_green' %> Pokud si instituce sama nevyžádá doplnění předem, můžete v případě neúplné odpovědi zaslat žádost na danou instituci.
+<!-- <% if !@info_request.nil? %>
+    <%= link_to "Požádat o doplnění dotazu", show_response_no_followup_url(:id => @info_request.id, :incoming_message_id => nil) + "?internal_review=1#followup", :class => 'link_button_green' %> --> Pokud si instituce sama nevyžádá doplnění předem, můžete v případě neúplné odpovědi zaslat žádost na danou instituci.
 <% else %>
     Na konci stránky s vaším dotazem <%= site_name %> vyberte volbu "Požádat o doplnění dotazu"
     "request an internal review". Poté sepište žádost, která konkrétně odkazuje na chybějící informace. Link na žádost včetně všech potřebných osobních údajů doplní systém stránek IPV.
